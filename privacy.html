@@ -26,7 +26,7 @@
         <li>Your voice is sent only while you're talking to Seer, to understand and answer you.</li>
         <li>Your location is used to answer questions about where you are and what's ahead.</li>
         <li>Saved spots, rides, your home and settings stay on your device.</li>
-        <li>Our server keeps no copies of your audio, your words or your location.</li>
+        <li>Our server keeps no copies of your audio, your words or your location. The one exception: an answer you choose to report is emailed to us.</li>
       </ul>
 
       <h2>What goes where</h2>
@@ -57,6 +57,11 @@
               <td>The town name shown on screen</td>
             </tr>
             <tr>
+              <td>An answer you choose to report: what you asked, what Seer said, the reason you picked and the app version</td>
+              <td>Our server, which emails it to the RideSeer team (through Resend, an email delivery service)</td>
+              <td>To review and fix answers that are offensive, wrong or unsafe. Sent only when you tap Report</td>
+            </tr>
+            <tr>
               <td>Saved spots, ride history, home, settings, and a short diagnostics log</td>
               <td>Nowhere: stored on your device</td>
               <td>So RideSeer remembers them between rides</td>
@@ -76,7 +81,10 @@
       <p>If you turn on notification access, RideSeer uses it only to tell whether your navigation app is guiding you and to pause or resume your music. It does not read, store or send the content of your notifications. "Display over other apps" is used only for the floating talk button and to open your navigation app.</p>
 
       <h2>Our server</h2>
-      <p>RideSeer's server (hosted on Vercel) passes requests to xAI and Google. For each request it logs which tester's access code was used (by a short name, never the code itself), which feature, and when, so we can see usage and cost. Our hosting provider may also keep standard technical logs, such as IP addresses, for a limited time. We keep no audio, transcripts or locations.</p>
+      <p>RideSeer's server (hosted on Vercel) passes requests to xAI and Google. For each request it logs which tester's access code was used (by a short name, never the code itself), which feature, and when, so we can see usage and cost. Our hosting provider may also keep standard technical logs, such as IP addresses, for a limited time. We keep no audio, transcripts or locations, except the text of an answer you choose to report (below).</p>
+
+      <h2>Reporting an answer</h2>
+      <p>If Seer says something offensive, wrong or unsafe, tap Report beside the answer (or Settings → Report Seer's last answer) and pick a reason. That sends the question, the answer, the reason and the app version to us by email. It includes no location or voice recording. We keep report emails only as long as we need them to fix the problem.</p>
 
       <h2>Diagnostics</h2>
       <p>RideSeer keeps a short log of button presses, connection and audio events on your device to help fix problems. It contains no location, access code or anything you said. It leaves your device only if you choose Settings → Share diagnostics and send it.</p>
